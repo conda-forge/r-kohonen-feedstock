@@ -1,4 +1,4 @@
-{% set version = '3.0.2' %}
+{% set version = '3.0.4' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/kohonen_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/kohonen/kohonen_{{ version }}.tar.gz
-  sha256: e8689d5a9c90c2e9047d273f47524efec89678e2a8d53b1d5b08a14b5b95e2b5
+  sha256: 429864d72858c29d4187bed48ac1c17cf2ecb08f18090b6bf44dff55174609ab
 
 build:
   number: 0
@@ -54,3 +54,4 @@ extra:
   recipe-maintainers:
     - johanneskoester
     - bgruening
+    - jenzopr
