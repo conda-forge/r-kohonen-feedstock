@@ -17,7 +17,6 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 1000
-  skip: true  # [win32]
 
   rpaths:
     - lib/R/lib/
@@ -26,10 +25,11 @@ build:
 requirements:
   build:
     - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('c') }}  # [unix]
+    - {{ compiler('m2w64_c') }}    # [win]
     - {{ compiler('cxx') }}        # [unix]
     - {{ compiler('m2w64_cxx') }}  # [win]
+    - llvm-openmp          # [osx] 
   host:
     - r-base
     - r-mass
@@ -39,6 +39,7 @@ requirements:
     - r-base
     - r-mass
     - r-rcpp >=0.12.7
+    - llvm-openmp          # [osx] 
 
 test:
   commands:
