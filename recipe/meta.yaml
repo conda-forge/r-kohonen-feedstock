@@ -1,4 +1,4 @@
-{% set version = "3.0.10" %}
+{% set version = "3.0.11" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/kohonen_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/kohonen/kohonen_{{ version }}.tar.gz
-  sha256: 996956ea46a827c9f214e4f940a19304a0ff35bda707d4d7312f80d3479067b2
+  sha256: 018d820acdb7dfa716275ba24c4d671cb0202cb1fee584b673d0118e2c9063ae
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -49,11 +49,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=kohonen
   license: GPL (>= 2)
-  summary: Functions to train self-organising maps (SOMs). Also interrogation of the maps and
-    prediction using trained maps are supported. The name of the package refers to Teuvo
-    Kohonen, the inventor of the SOM.
+  summary: Functions to train self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
