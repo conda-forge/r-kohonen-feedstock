@@ -8,7 +8,7 @@ About r-kohonen
 
 Home: https://CRAN.R-project.org/package=kohonen
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Summary: Functions to train self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.
 About r-kohonen
@@ -16,7 +16,7 @@ About r-kohonen
 
 Home: https://CRAN.R-project.org/package=kohonen
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Summary: Functions to train self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.
 
