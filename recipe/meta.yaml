@@ -1,4 +1,4 @@
-{% set version = "3.0.11" %}
+{% set version = "3.0.12" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/kohonen_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/kohonen/kohonen_{{ version }}.tar.gz
-  sha256: 018d820acdb7dfa716275ba24c4d671cb0202cb1fee584b673d0118e2c9063ae
+  sha256: 40944b916aa228d90862301beb9d93a521e6d98ba23c147d1bd9dded04ef0ca1
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
