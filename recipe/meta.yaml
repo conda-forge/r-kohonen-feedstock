@@ -1,4 +1,4 @@
-{% set version = "3.0.12" %}
+{% set version = "3.0.13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kohonen_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kohonen/kohonen_{{ version }}.tar.gz
-  sha256: 40944b916aa228d90862301beb9d93a521e6d98ba23c147d1bd9dded04ef0ca1
+  sha256: 056db0d8333ae37de6ca0af7056f401db61adcce2aaa982b63340a9b9af0a350
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
